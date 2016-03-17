@@ -19,11 +19,12 @@ app.get("/", function(req, res) {
 });
 
 var aanwezigen;
-var url = __dirname+'/'+"aanwezigen.json";
-
+var url='http://localhost:3000/aanwezigen.json';
 request({url: url, json: true}, function (error, response, body) {
+  //  console.log(response);
     if (!error && response.statusCode === 200) {
-        console.log(body);
+        console.log('test@');
+        console.log(body); // Print the json response
         aanwezigen = body;
     };
 });
