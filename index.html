@@ -10,8 +10,15 @@
 </head>
 
 <body ng-app="myapp" ng-controller="mijnCtrl">
-    <input type="text" ng-model="textInput"/>
-    <input type="number" ng-model="numberInput"/>
+    <form action="http://127.0.0.1:3000/myaction" method="post">
+        <fieldset>
+
+        <input type="text" ng-model="textInput" id="name" name="name"/>
+        <input type="number" ng-model="numberInput" id="number" name="number"/>
+        <input type="submit" value="Send message" />
+        </fieldset>
+
+    </form>
     
     <ul ng-repeat="x in aanwezigen">
 
@@ -20,5 +27,4 @@
 
     </ul>
     
-    <button ng-click="ButtonClick()">CLICK ME</button>
 </html>

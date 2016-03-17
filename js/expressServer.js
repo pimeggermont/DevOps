@@ -3,6 +3,9 @@ var bodyparser = require("body-parser");
 var request = require("request");
 var app = express();
 app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({  
+  extended: true
+})); 
 
 
 app.use(function(req, res, next) {
@@ -52,4 +55,11 @@ fs.writeFile(outputFilename, JSON.stringify(myData, null, 4), function(err) {
 
 var port = Number(process.env.PORT || 3000);
 
-app.listen(port);
+app.post('/myaction', function(req, res) {
+  res.send('You sent the name "' + req.body.name + '".' + req.body.number);
+    console.log(req);
+});
+
+app.listen(port, function() {
+  console.log(port);
+});
