@@ -10,6 +10,7 @@
 </head>
 
 <body ng-app="myapp" ng-controller="mijnCtrl">
+    
     <form action="http://127.0.0.1:3000/myaction" method="post">
         <fieldset>
 
@@ -20,11 +21,12 @@
 
     </form>
     
-    <ul ng-repeat="x in aanwezigen">
+    <ul ng-repeat="x in aanwezigen.data">
 
         <li>{{x.naam}}</li>
-        </li>
+        <li>{{x.code}}</li>
 
     </ul>
+    <button ng-click="ButtonClick()">Click Me</button>
     
 </html>

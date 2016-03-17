@@ -1,13 +1,15 @@
-{
-    naam: "Pim Eggermont",
-    code: "1558"
-}, {
-    naam: "Janosh Verdonck"
-    code: "1558"
-}, {
-    naam: "Robbe Delie"
-    code: "1558"
-}, {
-    naam: "Jordi Lambrechts"
-    code: "1558"
+{"data":[
+    {
+        "naam": "Pim Eggermont",
+        "code": "1558"
+    }, {
+        "naam": "Janosh Verdonck",
+        "code": "1558"
+    }, {
+        "naam": "Robbe Delie",
+        "code": "1558"
+    }, {
+        "naam": "Jordi Lambrechts",
+        "code": "1558"
+    }]
 }
