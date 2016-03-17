@@ -29,7 +29,7 @@ request({
 }, function (error, response, body) {
     //  console.log(response);
     if (!error && response.statusCode === 200) {
-        console.log('test@');
+        //console.log('test@');
         console.log(body); // Print the json response
         aanwezigen = body;
     };
@@ -51,14 +51,10 @@ app.post('/myaction', function (req, res) {
     
     var outputFilename = '../aanwezigen.json';
 
-    fs.writeFile(outputFilename, JSON.stringify(aanwezigen, null, 4), function (err) {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("JSON saved to " + outputFilename);
-        }
+    fs.writeFile(outputFilename, JSON.stringify(aanwezigen, null, 4))
+                 
     });
-});
+
 
 app.listen(port, function () {
     console.log(port);

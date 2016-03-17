@@ -6,27 +6,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
     <script src="app.js"></script>
-    <title>dees is den title</title>
+    <title>De Kroele Knikkers</title>
 </head>
 
 <body ng-app="myapp" ng-controller="mijnCtrl">
-    
+
     <form action="http://127.0.0.1:3000/myaction" method="post">
         <fieldset>
 
-        <input type="text" ng-model="textInput" id="name" name="naam"/>
-        <input type="number" ng-model="numberInput" id="number" name="code"/>
-        <input type="submit" value="Send message" />
+            <input type="text" ng-model="textInput" id="name" name="naam" />
+            <input type="number" ng-model="numberInput" id="number" name="code" />
+            <input type="submit" value="Send message" />
+            <input type="number" ng-model="checkNumber"/>
         </fieldset>
 
     </form>
     
-    <ul ng-repeat="x in aanwezigen.data">
-
-        <li>{{x.naam}}</li>
-        <li>{{x.code}}</li>
-
-    </ul>
-    <button ng-click="ButtonClick()">Click Me</button>
     
+    <button ng-click="ButtonClick()">Click Me</button>
+
+    
+    <table>
+        <tr ng-repeat="x in aanwezigen.data">
+            <td> {{x.naam}}</td>
+            <td> {{x.code}}</td>
+            <td> {{x.code-checkNumber}}</td>
+        </tr>
+    </table>
+
+
+
 </html>
