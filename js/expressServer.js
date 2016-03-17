@@ -42,7 +42,7 @@ app.get("/aanwezigen", function (req, res) {
 var port = Number(process.env.PORT || 3000);
 
 app.post('/myaction', function (req, res) {
-    res.send('You sent the name "' + req.body.name + '".' + req.body.number);
+    res.send('You sent the name "' + req.body.naam + '".' + req.body.code);
     //console.log(req);
     
     var fs = require('fs');
