@@ -31,6 +31,36 @@
         {
             "naam": "testjeeeuuuhhhh1",
             "code": "456"
+        },
+        {
+            "naam": "pim",
+            "code": "123",
+            "klas": "2EA2"
+        },
+        {
+            "naam": "Pim Eggermont",
+            "code": "123",
+            "klas": "3EA2"
+        },
+        {
+            "naam": "Pim Eggermont",
+            "code": "1588",
+            "klas": "2EA2"
+        },
+        {
+            "naam": "Pim Eggermont",
+            "code": "12345",
+            "klas": "2EA2"
+        },
+        {
+            "naam": "",
+            "klas": "",
+            "code": ""
+        },
+        {
+            "naam": "",
+            "klas": "",
+            "code": ""
         }
     ]
 }

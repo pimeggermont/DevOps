@@ -11,7 +11,7 @@ app.controller("mijnCtrl", function ($scope, $http) {
 
             for (i = 0; i < aanwezigen.data.length; i++) {
                 if ($scope.checkNum == aanwezigen.data[i].code) {
-                    $scope.checked.push(aanwezigen.data[i].naam);
+                    $scope.checked.push(aanwezigen.data[i]);
                     console.log($scope.checked);
                 }
             }
