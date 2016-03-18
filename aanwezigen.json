@@ -2,180 +2,28 @@
     "data": [
         {
             "naam": "Pim Eggermont",
-            "code": "1558"
+            "code": "1558",
+            "klas": "2EA2"
         },
         {
             "naam": "Janosh Verdonck",
-            "code": "1558"
+            "code": "1558",
+            "klas": "2EA2"
         },
         {
             "naam": "Robbe Delie",
-            "code": "1558"
+            "code": "1558",
+            "klas": "2EA2"
         },
         {
             "naam": "Jordi Lambrechts",
-            "code": "1558"
+            "code": "1558",
+            "klas": "2EA2"
         },
         {
             "naam": "Jef Clissen",
-            "code": "1685"
-        },
-        {
-            "name": "heeee ggggg",
-            "code": "69696969"
-        },
-        {
-            "naam": "testjeeeuuuhhhh",
-            "code": "123"
-        },
-        {
-            "naam": "testjeeeuuuhhhh1",
-            "code": "456"
-        },
-        {
-            "naam": "pim",
-            "code": "123",
+            "code": "1685",
             "klas": "2EA2"
-        },
-        {
-            "naam": "Pim Eggermont",
-            "code": "123",
-            "klas": "3EA2"
-        },
-        {
-            "naam": "Pim Eggermont",
-            "code": "1588",
-            "klas": "2EA2"
-        },
-        {
-            "naam": "Pim Eggermont",
-            "code": "12345",
-            "klas": "2EA2"
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "pim",
-            "klas": "2ea3",
-            "code": "158"
-        },
-        {
-            "naam": "Pim Eggermont",
-            "klas": "3ea456789",
-            "code": "1337"
-        },
-        {
-            "naam": "jahaaaa mooi ding ",
-            "klas": "je ...",
-            "code": "789"
-        },
-        {
-            "naam": "p",
-            "klas": "2easert4",
-            "code": "1458"
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "Pi",
-            "klas": "3E1415",
-            "code": "3141592"
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "",
-            "klas": "",
-            "code": ""
-        },
-        {
-            "naam": "pimp",
-            "klas": "2EA2",
-            "code": "1558"
-        },
-        {
-            "naam": "pim",
-            "klas": "2ea45676",
-            "code": "123"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "Pim",
-            "klas": "2e22e2",
-            "code": "12212"
-        },
-        {
-            "naam": "pimp",
-            "klas": "2ea2345678",
-            "code": "12356"
         }
     ]
 }
