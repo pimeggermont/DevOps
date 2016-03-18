@@ -43,8 +43,7 @@ var port = Number(process.env.PORT || 3000);
 
 app.post('/myaction', function (req, res) {
     res.send('You sent the name "' + req.body.naam + '".' + req.body.code);
-    //console.log(req);
-
+    
     var fs = require('fs');
 
     aanwezigen.data.push(req.body); //data bij in de array pushen
@@ -52,8 +51,8 @@ app.post('/myaction', function (req, res) {
     var outputFilename = '../aanwezigen.json';
 
     fs.writeFile(outputFilename, JSON.stringify(aanwezigen, null, 4))
-                 
-    });
+
+});
 
 
 app.listen(port, function () {
