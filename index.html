@@ -10,28 +10,35 @@
 </head>
 
 <body ng-app="myapp" ng-controller="mijnCtrl">
-
+    <h1>CHECK YOUR ATTENDEES</h1>
     <form action="http://127.0.0.1:3000/myaction" method="post">
         <fieldset>
-            
-            naam: <input type="text" ng-model="textInput" id="name" name="naam" />
-            klas: <input type="text" ng-model="classInput" id="class" name="klas" />
-            check nummer: <input type="number" ng-model="numberInput" id="number" name="code" />
-            <input type="submit" value="Send message" />
-        </fieldset>
 
+            naam:
+            <input type="text" ng-model="textInput" id="name" name="naam" /> klas:
+            <input type="text" ng-model="classInput" id="class" name="klas" /> check nummer:
+            <input type="number" ng-model="numberInput" id="number" name="code" />
+            <input type="submit" value="Send message" />
+
+        </fieldset>
+        <fieldset>
+            <input type="check" ng-model="checkNum" />
+            <button ng-click="ButtonCheck()">check</button>
+        </fieldset>
     </form>
 
     <form>
 
-        <input type="check" ng-model="checkNum" />
-        <button ng-click="ButtonCheck()">check</button>
+
 
     </form>
     <table>
         <tr ng-repeat="x in checked">
-            <td><h3>{{x.klas}}</h3></td>
-            <td><h3>{{x.naam}}</h3></td>
+            <td>
+                <h3>{{x.klas}}</h3></td>
+            <td>
+                <h3>{{x.naam}}</h3></td>
         </tr>
     </table>
+
 </html>
