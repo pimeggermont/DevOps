@@ -4,40 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-
     <script src="app.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>dees is den title</title>
 </head>
 
 <body ng-app="myapp" ng-controller="mijnCtrl">
     <h1>CHECK YOUR ATTENDEES</h1>
-    <form action="http://127.0.0.1:3000/myaction" method="post">
-        <fieldset>
+    <form target="_blank" action="http://127.0.0.1:3000/myaction" method="post">
+        <div class="col-lg-3">
+            <label >Naam:</label>
+            <input type="text" ng-model="textInput" id="name" name="naam" class="form-control" />
+        </div>
+        <div class="col-lg-3">
+            <label>Klas:</label>
+            <input type="text" ng-model="classInput" id="class" name="klas" class="form-control" />
+        </div>
+        <div class="col-lg-3">
+            <label>Aanwezigheids-nummer:</label>
+            <input type="number" ng-model="numberInput" id="number" name="code" class="form-control" />
+        </div>
+        <div class="col-lg-3">
 
-            naam:
-            <input type="text" ng-model="textInput" id="name" name="naam" /> klas:
-            <input type="text" ng-model="classInput" id="class" name="klas" /> check nummer:
-            <input type="number" ng-model="numberInput" id="number" name="code" />
-            <input type="submit" value="Send message" />
+            <input type="submit" class="btn btn-success" value="Send!" />
+        </div>
 
-        </fieldset>
-        <fieldset>
-            <input type="check" ng-model="checkNum" />
-            <button ng-click="ButtonCheck()">check</button>
-        </fieldset>
+
     </form>
 
     <form>
-
-
-
+        <input type="check" ng-model="checkNum" class="form-control" />
+        <button type="button" class="btn btn-success" ng-click="ButtonCheck()">check</button>
     </form>
-    <table>
+
+    <table class="col-sm-12 table-bordered">
+        <tr>
+            <td class="col-lg-6">Klas</td>
+            <td class="col-lg-6">Naam</td>
+        </tr>
         <tr ng-repeat="x in checked">
             <td>
-                <h3>{{x.klas}}</h3></td>
+                <div class="col-lg-6">{{x.klas}}</div>
+            </td>
             <td>
-                <h3>{{x.naam}}</h3></td>
+                <div class="col-lg-6">{{x.naam}}</div>
+            </td>
         </tr>
     </table>
 
