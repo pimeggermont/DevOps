@@ -17,4 +17,11 @@ app.controller("mijnCtrl", function ($scope, $http) {
             }
         });
     }
+    
+    $scope.clearBox=function(){
+        document.getElementById("name").value = "";
+        document.getElementById("class").value = "";
+        document.getElementById("number").value = "";
+        console.log("text cleared");
+    }
 });
