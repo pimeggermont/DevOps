@@ -1,0 +1,32 @@
+#lijnDiv {
+    margin-bottom: 10px;
+    margin:center;
+}
+
+h1 {
+    margin-left: 10%;
+}
+
+#marginbottom{
+    margin-bottom: 10px;
+}
+/*
+div {
+    border: 1px solid black;
+} */
+
+#row {
+    display: flex;
+}
+#col {
+    flex:1;
+    
+    padding: 1em;
+    
+}
+
+#summit {
+    position: absolute;
+    bottom: 17%;
+    left:3%;
+}
