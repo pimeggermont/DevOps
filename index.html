@@ -21,12 +21,15 @@
 
     </form>
     
-    <ul ng-repeat="x in aanwezigen.data">
-
-        <li>{{x.naam}}</li>
-        <li>{{x.code}}</li>
-
+    <form>
+    
+        <input type="check" ng-model="checkNum"/>
+        <button ng-click="ButtonCheck()">check</button>
+        
+    </form>
+    
+    <ul ng-repeat="x in checked">
+        <li>{{x}}</li>
     </ul>
-    <button ng-click="ButtonClick()">Click Me</button>
     
 </html>
