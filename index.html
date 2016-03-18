@@ -14,9 +14,9 @@
     <form action="http://127.0.0.1:3000/myaction" method="post">
         <fieldset>
             
-            <h3>naam:</h3><input type="text" ng-model="textInput" id="name" name="naam" />
-            <h3>klas:</h3><input type="text" ng-model="classInput" id="class" name="klas" />
-            <h3>check nummer:</h3><input type="number" ng-model="numberInput" id="number" name="code" />
+            naam: <input type="text" ng-model="textInput" id="name" name="naam" />
+            klas: <input type="text" ng-model="classInput" id="class" name="klas" />
+            check nummer: <input type="number" ng-model="numberInput" id="number" name="code" />
             <input type="submit" value="Send message" />
         </fieldset>
 
@@ -30,8 +30,8 @@
     </form>
     <table>
         <tr ng-repeat="x in checked">
-            <td>{{x.klas}}</td>
-            <td>{{x.naam}}</td>
+            <td><h3>{{x.klas}}</h3></td>
+            <td><h3>{{x.naam}}</h3></td>
         </tr>
     </table>
 </html>
